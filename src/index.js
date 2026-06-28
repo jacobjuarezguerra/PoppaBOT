@@ -1,5 +1,12 @@
 const { Client, GatewayIntentBits } = require('discord.js');
+const http = require('http');
 require('dotenv').config();
+
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('PoppaBot online');
+}).listen(PORT, () => console.log(`Servidor HTTP en puerto ${PORT}`));
 
 const client = new Client({
   intents: [
