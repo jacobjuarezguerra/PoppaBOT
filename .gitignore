@@ -1,0 +1,37 @@
+# PoppaBot — .gitignore
+
+# Secretos
+.env
+!env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+
+# Base de datos local
+*.db
+data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Entorno virtual
+.env/Scripts/
+.env/Lib/
+.env/Scripts/
